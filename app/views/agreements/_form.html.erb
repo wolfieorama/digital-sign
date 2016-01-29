@@ -1,4 +1,4 @@
-<%= form_for(@agreement) do |f| %>
+<%= form_for @agreement, html: { class: "sigPad" } do |f| %>
   <% if @agreement.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@agreement.errors.count, "error") %> prohibited this agreement from being saved:</h2>
@@ -15,9 +15,12 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :signature %><br>
-    <%= f.text_area :signature %>
+  <h5>User Agreement</h5>
+  <p>By signing this agreement, you promise to be a great person.</p>
+  <div class="sig sigWrapper">
+    <div class="typed"></div>
+    <canvas class="pad" width="298" height="55"></canvas>
+    <%= f.hidden_field :signature, class: "output" %><br />
   </div>
   <div class="actions">
     <%= f.submit %>
