@@ -1,7 +1,8 @@
-== README
+== signpad
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* An app demostrating the use of digital signature 
+
+* And rich text formatting 
 
 Things you may want to cover:
 
