@@ -25,11 +25,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'signature-pad-rails'
 
-gem 'jquery-rails'
-gem 'bootstrap-sass'
+# gem 'jquery-rails'
+# gem 'bootstrap-sass'
+#
+#
+# gem 'bootstrap-wysihtml5-rails'
 
-
-gem 'bootstrap-wysihtml5-rails'
+gem 'ckeditor_rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

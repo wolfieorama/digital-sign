@@ -10,10 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require bootstrap-wysihtml5
-//= require bootstrap-wysihtml5/locales
-//= require signature-pad
 //= require jquery
 //= require jquery_ujs
+//= require ckeditor-jquery
 //= require turbolinks
 //= require_tree .
