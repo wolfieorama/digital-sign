@@ -14,7 +14,7 @@
   <tbody>
     <% @agreements.each do |agreement| %>
       <tr>
-        <td><%= agreement.name %></td>
+        <td><%= sanitize agreement.name %></td>
         <td><%= agreement.signature %></td>
         <td><%= link_to 'Show', agreement %></td>
         <td><%= link_to 'Edit', edit_agreement_path(agreement) %></td>
