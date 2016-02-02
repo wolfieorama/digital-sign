@@ -69,6 +69,6 @@ class AgreementsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def agreement_params
-      params.require(:agreement).permit(:name, :signature)
+      params.require(:agreement).permit(:name, :signature, :date)
     end
 end
